@@ -1,0 +1,10 @@
+# CFD case files are huge - keep them on the hard drive
+*.sim
+*.cas
+*.cas.h5
+*.dat.h5
+*.msh
+# SOLIDWORKS lock files and OS clutter
+~$*
+Thumbs.db
+desktop.ini
