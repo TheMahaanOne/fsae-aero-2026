@@ -1,7 +1,7 @@
 <p align="center"><img src="images/banner/banner.jpg" width="100%"></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/STAR--CCM%2B-1c2434?style=for-the-badge" alt="STAR-CCM+">
+<img src="https://img.shields.io/badge/Siemens%20STAR--CCM%2B-1c2434?style=for-the-badge" alt="Siemens STAR-CCM+">
 <img src="https://img.shields.io/badge/ANSYS%20Fluent-1c2434?style=for-the-badge" alt="ANSYS Fluent">
 <img src="https://img.shields.io/badge/SOLIDWORKS-1c2434?style=for-the-badge&logo=dassaultsystemes&logoColor=white" alt="SOLIDWORKS">
 <img src="https://img.shields.io/badge/Python-1c2434?style=for-the-badge&logo=python&logoColor=white" alt="Python">
@@ -16,7 +16,7 @@ Formula Bharat & Supra SAE 2026 · **Supra SAE 2026: P3 overall, P2 Engineering 
 
 I led a 4-person aerodynamics sub-team that delivered Team Fateh's **first complete aerodynamic package**: front wing, rear wing, side wings, whiskers and nosecone. It took the car from essentially no downforce to **397 N at 10 m/s at a downforce-to-drag ratio of 3.6**, and in lap-time simulation it moved the car from podium to first in skidpad, autocross and endurance.
 
-<p align="center"><img src="images/car/tuff18_formula_bharat_2026.jpg" width="31%"> <img src="images/car/side_wings_bodywork.jpg" width="66%"></p>
+<p align="center"><img src="images/car/complete_aero_package_fitted_formula_bharat_2026.jpg" width="31%"> <img src="images/car/side_wings_and_bodywork.jpg" width="66%"></p>
 
 ### My role
 - Led the 4-person aero sub-team: set the targets, chose the concept (wings over an undertray), and owned the CFD process and sign-off.
@@ -37,7 +37,7 @@ I led a 4-person aerodynamics sub-team that delivered Team Fateh's **first compl
 
 ## Headline results
 
-| Full car @ 10 m/s (STAR-CCM+, k-ω SST) | |
+| Full car @ 10 m/s (Siemens STAR-CCM+, k-ω SST) | |
 |---|---|
 | Downforce | **397.3 N** |
 | Drag | 110.9 N |
@@ -51,7 +51,7 @@ I led a 4-person aerodynamics sub-team that delivered Team Fateh's **first compl
 | Front wing + whiskers | 90 N | C<sub>L</sub>/C<sub>D</sub> > 2 |
 | Side wings | 70 N | C<sub>L</sub>/C<sub>D</sub> > 2 |
 
-<p align="center"><img src="images/cfd/full_car_velocity_starccm.jpg" width="95%"></p>
+<p align="center"><img src="images/cfd/full_car_system_simulated_in_starccm.jpg" width="95%"></p>
 
 ---
 
@@ -145,7 +145,7 @@ An **inwashing multi-element assembly with integrated air-dams** sits ahead of t
 | Convergence | Residuals (continuity, momentum, k, ω) and force monitors, about 1000 iterations |
 | Post-processing | Pressure and velocity fields, Q-criterion vortex structures, lift and drag along the car length |
 
-<p align="center"><img src="images/cfd/domain_refinement.jpg" width="49%"> <img src="images/cfd/surface_mesh_front.jpg" width="37%"></p>
+<p align="center"><img src="images/cfd/domain_cross_section_with_refinement_regions.jpg" width="49%"> <img src="images/cfd/surface_mesh_and_refinement_full_car_front_view.jpg" width="37%"></p>
 <p align="center"><img src="images/cfd/q_criterion.jpg" width="49%"> <img src="images/cfd/velocity_side_with_aero.jpg" width="49%"></p>
 <p align="center"><img src="images/cfd/velocity_side_no_aero.jpg" width="60%"><br><sub>Baseline car without aero, for comparison</sub></p>
 
@@ -191,8 +191,8 @@ The package deliberately gives up a little straight-line acceleration to win the
 | Side wings | **Deflection-tested** before running |
 
 <p align="center">
-<img src="images/manufacturing/foam_mould_blocks.jpg" width="19%"> <img src="images/manufacturing/mould_profiling.jpg" width="19%"> <img src="images/manufacturing/nosecone_wet_layup.jpg" width="19%"> <img src="images/manufacturing/vacuum_bagging.jpg" width="19%"> <img src="images/manufacturing/cfrp_nosecone_fitted.jpg" width="19%">
-<img src="images/manufacturing/rear_wing_corrugation.jpg" width="32%"> <img src="images/manufacturing/printed_whiskers.jpg" width="20%"> <img src="images/manufacturing/side_wing_deflection_test.jpg" width="20%"> <img src="images/manufacturing/nosecone_finished.jpg" width="20%">
+<img src="images/manufacturing/foam_blocks_stacked_and_profiled_for_sidepod_female_mould.jpg" width="19%"> <img src="images/manufacturing/filler_and_putty_to_smoothen_female_mould_1.jpg" width="19%"> <img src="images/manufacturing/wet_layup_onto_the_nosecone_2025.jpg" width="19%"> <img src="images/manufacturing/vacuum_bag_sealed_over_female_nosecone_mould.jpg" width="19%"> <img src="images/manufacturing/cured_cfrp_nosecone_fitted.jpg" width="19%">
+<img src="images/manufacturing/corrugation_for_rear_wing_elements.jpg" width="32%"> <img src="images/manufacturing/3d_printed_whiskers.jpg" width="20%"> <img src="images/manufacturing/deflection_testing_for_side_wings.jpg" width="20%"> <img src="images/manufacturing/nosecone_after_sanding_and_wrapping.jpg" width="20%">
 </p>
 
 **Also on the team:** I built a COMSOL thermal model of the HV accumulator (heat generation, cell-array conduction, convective cooling) to keep the tractive system within regulatory limits at peak power (Formula Bharat Pi EV 2024).
@@ -211,7 +211,7 @@ Exports of the 2026 package are in [`cad/`](cad). Each model comes as an STL (cl
 | Side wing | [`side_wings.stl`](cad/side_wings.stl) | [`side_wings.x_t`](cad/side_wings.x_t) |
 | Bluff body used for CFD | [`bluff_body.stl`](cad/bluff_body.stl) | [`bluff_body.x_t`](cad/bluff_body.x_t) |
 
-<p align="center"><img src="images/car/cad_full_car.jpg" width="70%"></p>
+<p align="center"><img src="images/car/full_car_system_designed_in_solidworks.jpg" width="70%"></p>
 
 ## Code
 
